@@ -1,0 +1,1870 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <!-- =========================================
+         ASOSIY SOZLAMALAR
+    ========================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#050508">
+    <meta name="author" content="Abrorbek Anvarjonov">
+    <meta name="robots" content="index, follow">
+
+    <meta name="description"
+          content="Abrorbek Anvarjonovning shaxsiy portfolio sayti. Ta'lim yo'li, dasturlash, innovatsion g'oyalar, loyihalar, hakatonlar va kelajak maqsadlari.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Abrorbek Anvarjonov | Shaxsiy portfolio">
+    <meta property="og:description"
+          content="Bilim olish, texnologiyalarni o'rganish va foydali raqamli mahsulotlar yaratish yo'lidagi shaxsiy hikoyam.">
+    <meta property="og:locale" content="uz_UZ">
+
+    <title>Abrorbek Anvarjonov — Shaxsiy portfolio</title>
+
+    <!-- Shriftlar -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+     <img src="photo_2026-10-13_13-57-07.jpg" alt="Abrorbelk" width="260">
+    <!-- Asosiy dizayn fayli -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- 3D animatsiyalar kutubxonasi -->
+    <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r160/three.min.js">
+    </script>
+
+    <!-- Saytning JavaScript funksiyalari -->
+    <script defer src="java/script.js"></script>
+</head>
+
+<body>
+
+    <!-- =========================================
+         FON EFFEKTLARI
+    ========================================== -->
+
+    <div class="noise" aria-hidden="true"></div>
+
+    <div
+        class="scroll-progress"
+        id="scrollProgress"
+        aria-hidden="true">
+    </div>
+
+    <div
+        class="cursor-glow"
+        id="cursorGlow"
+        aria-hidden="true">
+    </div>
+
+
+    <!-- =========================================
+         HEADER — LOGO, MENYU VA MUSIQA
+    ========================================== -->
+
+    <header class="site-header" id="top">
+
+        <a
+            class="brand"
+            href="#home"
+            aria-label="Abrorbek Anvarjonov bosh sahifasi">
+
+            <span class="brand-mark" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+
+            <span>
+                ABRORBEK<span class="brand-muted">.DEV</span>
+            </span>
+        </a>
+
+
+        <!-- Mobil qurilmalar uchun menyu -->
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Menyuni ochish"
+            aria-expanded="false"
+            aria-controls="mainNav">
+
+            <span></span>
+            <span></span>
+        </button>
+
+
+        <!-- Asosiy navigatsiya -->
+        <nav
+            class="main-nav"
+            id="mainNav"
+            aria-label="Asosiy navigatsiya">
+
+            <a href="#about">Men haqimda</a>
+            <a href="#journey">Ta'lim</a>
+            <a href="#skills">Ko'nikmalar</a>
+            <a href="#projects">Loyihalar</a>
+            <a href="#hackathons">Faoliyat</a>
+            <a href="#contact">Aloqa</a>
+
+        </nav>
+
+
+        <!-- Ovoz va aloqa tugmalari -->
+        <div class="header-actions">
+
+            <button
+                class="sound-toggle"
+                id="soundToggle"
+                type="button"
+                aria-pressed="false"
+                title="Fon musiqasini yoqish yoki o'chirish">
+
+                <span class="sound-bars" aria-hidden="true">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+
+                <span id="soundLabel">SOUND OFF</span>
+            </button>
+
+            <a class="header-cta" href="#contact">
+                Bog'lanish <span>↗</span>
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         ASOSIY KONTENT
+    ========================================== -->
+
+    <main>
+
+        <!-- =====================================
+             01. HERO — BOSH SAHIFA
+        ====================================== -->
+
+        <section
+            class="hero section-shell"
+            id="home">
+
+            <div class="hero-grid">
+
+                <div class="hero-copy reveal">
+
+                    <p class="eyebrow">
+                        <span class="status-dot"></span>
+                        PERSONAL PORTFOLIO
+                        <span class="eyebrow-line"></span>
+                        2026
+                    </p>
+
+                    <h1>
+                        Men
+                        <span class="outline-word">
+                            o'rganaman.
+                        </span>
+
+                        <br>
+
+                        Men
+                        <span class="accent-word">
+                            yarataman.
+                        </span>
+                    </h1>
+
+                    <p class="hero-lead">
+                        Men Abrorbek Anvarjonov. Ta'lim, dasturlash,
+                        raqamli texnologiyalar va innovatsion g'oyalarga
+                        qiziqaman. Maqsadim — yangi bilimlarni o'rganish,
+                        ularni amaliyotda sinash va insonlar uchun
+                        haqiqiy foyda keltiradigan yechimlar yaratish.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a
+                            class="button button-primary"
+                            href="#projects">
+                            Loyihalarimni ko'r
+                            <span>↘</span>
+                        </a>
+
+                        <a
+                            class="text-link"
+                            href="#about">
+                            Men haqimda
+                            <span>↗</span>
+                        </a>
+
+                    </div>
+
+
+                    <!-- Qisqacha ma'lumot -->
+                    <div class="hero-meta">
+
+                        <div>
+                            <span class="meta-label">
+                                ASOSIY YO'NALISHLAR
+                            </span>
+
+                            <span>
+                                IT · Dasturlash · Innovatsiya
+                            </span>
+                        </div>
+
+                        <div>
+                            <span class="meta-label">
+                                HOZIRGI MAQSAD
+                            </span>
+
+                            <span>
+                                <i class="status-dot"></i>
+                                O'rganish va rivojlanish
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- 3D animatsiya uchun maydon -->
+                <div
+                    class="hero-visual"
+                    aria-label="Portfolio uchun dekorativ uch o'lchamli animatsiya">
+
+                    <div class="visual-orbit orbit-one"></div>
+                    <div class="visual-orbit orbit-two"></div>
+
+                    <div class="visual-label visual-label-top">
+                        <span>FIG. 001</span>
+                        <span>DIGITAL JOURNEY</span>
+                    </div>
+
+                    <div
+                        id="threeStage"
+                        class="three-stage">
+                    </div>
+
+                    <div class="visual-cross cross-one">+</div>
+                    <div class="visual-cross cross-two">+</div>
+
+                    <div class="visual-coordinates">
+                        ANDIJON<br>
+                        FARG'ONA
+                    </div>
+
+                    <div class="visual-label visual-label-bottom">
+                        <span>PERSONAL SYSTEM</span>
+                        <span class="live-indicator">
+                            ● ACTIVE
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-bottom">
+
+                <span>PASTGA TUSHIB KO'RING</span>
+
+                <span class="scroll-line">
+                    <i></i>
+                </span>
+
+                <span class="hero-bottom-right">
+                    MY STORY · MY LEARNING · MY FUTURE
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             HARAKATLANUVCHI SO'ZLAR
+        ====================================== -->
+
+        <section class="intro-strip" aria-label="Qiziqishlar">
+
+            <div class="ticker">
+
+                <div class="ticker-track">
+
+                    <span>TECHNOLOGY</span>
+                    <b>✳</b>
+
+                    <span>PROGRAMMING</span>
+                    <b>✳</b>
+
+                    <span>INNOVATION</span>
+                    <b>✳</b>
+
+                    <span>STARTUPS</span>
+                    <b>✳</b>
+
+                    <span>CREATIVE THINKING</span>
+                    <b>✳</b>
+
+                    <span>TECHNOLOGY</span>
+                    <b>✳</b>
+
+                    <span>PROGRAMMING</span>
+                    <b>✳</b>
+
+                    <span>INNOVATION</span>
+                    <b>✳</b>
+
+                    <span>STARTUPS</span>
+                    <b>✳</b>
+
+                    <span>CREATIVE THINKING</span>
+                    <b>✳</b>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             02. MEN HAQIMDA
+        ====================================== -->
+
+        <section
+            class="content-section section-shell"
+            id="about">
+
+            <div class="section-index reveal">
+                <span>01 / ABOUT</span>
+                <span class="index-rule"></span>
+                <span>MEN HAQIMDA</span>
+            </div>
+
+
+            <div class="about-layout">
+
+                <div class="section-heading reveal">
+
+                    <p class="eyebrow">
+                        MENING HIKOYAM
+                    </p>
+
+                    <h2>
+                        Oddiy qiziqishdan
+                        <br>
+                        <span class="accent-word">
+                            katta maqsadlar sari.
+                        </span>
+                    </h2>
+
+                </div>
+
+
+                <div class="about-copy reveal">
+
+                    <p class="large-copy">
+                        Men — Abrorbek Anvarjonov.
+                        Men uchun bilim olish faqat darslarni
+                        o'zlashtirish emas, balki o'rganganlarimni
+                        hayotda qo'llash va yangi imkoniyatlar
+                        yaratish yo'lidir.
+                    </p>
+
+                    <p>
+                        Ta'lim yo'lim Andijon viloyatida boshlandi.
+                        Dastlab Andijon tumani 3-umumiy o'rta ta'lim
+                        maktabida to'qqiz yil tahsil oldim.
+                        Keyinchalik Andijon shahridagi 54-maktabda
+                        o'qishimni davom ettirdim va Andijon davlat
+                        universiteti akademik litseyida ikki yillik
+                        ta'lim bosqichini yakunladim.
+                    </p>
+
+                    <p>
+                        Keyingi bosqichda Farg'ona davlat texnika
+                        universitetiga o'qishga kirdim. Universitet
+                        muhiti menga bilimlarni chuqurroq o'rganish,
+                        o'z qiziqishlarimni rivojlantirish va kelajak
+                        kasbim haqida aniqroq fikrlash imkonini
+                        bermoqda.
+                    </p>
+
+                    <p>
+                        Dasturlash, veb-sayt yaratish, raqamli
+                        mahsulotlar, sun'iy intellekt va startap
+                        g'oyalariga qiziqaman. Men uchun yaxshi
+                        loyiha shunchaki chiroyli ko'rinishga ega
+                        bo'lishi bilan cheklanmaydi. U muammoni
+                        tushunishi, foydalanuvchiga qulay bo'lishi
+                        va amaliy qiymat yaratishi kerak.
+                    </p>
+
+                    <p>
+                        Yangi texnologiyalarni o'rganish davomida
+                        rejalashtirish, muammoni kichik vazifalarga
+                        ajratish, xatolarni aniqlash va yechimni
+                        bosqichma-bosqich takomillashtirishga
+                        intilaman.
+                    </p>
+
+                    <p>
+                        Bu portfolio mening ta'lim tariximni,
+                        qiziqishlarimni, amaliy ishlarimni,
+                        hakaton va musobaqalardagi ishtirokimni
+                        hamda kelajakdagi rejalarimni namoyish
+                        etish uchun yaratilmoqda.
+                    </p>
+
+                    <a
+                        class="text-link"
+                        href="#journey">
+                        Ta'lim tariximni ko'rish
+                        <span>↘</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Dekorativ vizual qism -->
+            <div class="about-visual reveal">
+
+                <div class="about-visual-grid"></div>
+
+                <div class="about-orb">
+                    <div class="orb-ring"></div>
+                    <div class="orb-ring ring-two"></div>
+
+                    <div class="orb-core">
+                        A<span>_</span>
+                    </div>
+                </div>
+
+                <div class="about-visual-note note-left">
+                    <span>01</span>
+                    CURIOSITY
+                </div>
+
+                <div class="about-visual-note note-right">
+                    <span>02</span>
+                    CONSISTENCY
+                </div>
+
+                <p class="about-visual-caption">
+                    "O'rganishdan to'xtamaslik — rivojlanishning
+                    eng muhim qadami."
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             03. TA'LIM TARIXI
+        ====================================== -->
+
+        <section
+            class="content-section section-shell journey-section"
+            id="journey">
+
+            <div class="section-index reveal">
+                <span>02 / EDUCATION</span>
+                <span class="index-rule"></span>
+                <span>TA'LIM VA RIVOJLANISH</span>
+            </div>
+
+
+            <div class="journey-intro">
+
+                <div class="section-heading reveal">
+
+                    <p class="eyebrow">
+                        MENING TA'LIM YO'LIM
+                    </p>
+
+                    <h2>
+                        Har bir bosqich
+                        <br>
+                        <span class="accent-word">
+                            yangi imkoniyat.
+                        </span>
+                    </h2>
+
+                </div>
+
+                <p class="section-aside reveal">
+                    Andijondagi maktab yillaridan Farg'onadagi
+                    universitet hayotigacha. Har bir bosqich
+                    bilimlarimni mustahkamlash va kelajagimni
+                    shakllantirish yo'lidagi muhim tajribadir.
+                </p>
+
+            </div>
+
+
+            <!-- Ta'lim vaqt chizig'i -->
+            <div class="timeline">
+
+                <div class="timeline-line">
+                    <span></span>
+                </div>
+
+
+                <!-- 1. ANDIJON TUMANI 3-MAKTAB -->
+                <article class="timeline-item reveal">
+
+                    <div class="timeline-marker">
+                        <span>01</span>
+                    </div>
+
+                    <div class="timeline-date">
+                        2014 — 2022
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <p class="timeline-type">
+                            UMUMIY O'RTA TA'LIM · 9 YIL
+                        </p>
+
+                        <h3>
+                            Andijon tumani 3-umumiy o'rta
+                            ta'lim maktabi
+                        </h3>
+
+                        <p>
+                            Ta'lim yo'limning muhim poydevori
+                            Andijon tumani 3-umumiy o'rta ta'lim
+                            maktabida shakllandi. Bu yerda to'qqiz
+                            yil davomida umumta'lim fanlarini
+                            o'rgandim, yangi bilimlarni o'zlashtirdim
+                            va keyingi bosqichlarda kerak bo'ladigan
+                            asosiy bilimlarimni shakllantirdim.
+                        </p>
+
+                        <p>
+                            Maktab davri bilim olishga jiddiy
+                            yondashish, berilgan topshiriqlar ustida
+                            ishlash, savollarga javob izlash va
+                            o'qish jarayonida muntazam harakat
+                            qilish muhimligini tushunishimga
+                            yordam berdi.
+                        </p>
+
+                        <p>
+                            Ushbu davr hayotimdagi dastlabki katta
+                            ta'lim bosqichi bo'lib, keyinchalik
+                            boshqa maktab va oliy ta'lim muassasasida
+                            o'qishim uchun asos yaratdi.
+                        </p>
+
+
+                        <!-- 3-MAKTAB RASMLARI -->
+                        <div class="portfolio-gallery">
+
+                            <div class="gallery-heading">
+                                <span>PHOTO ARCHIVE / 01</span>
+                               
+<a href="https://yandex.uz/maps/org/3_sonli_umumiy_o_rta_ta_lim_maktabi/135972399135/?ll=72.415584%2C40.734723&z=14" target="_blank" rel="noopener noreferrer">
+    Mening maktabim
+</a>
+
+                                 <p>tel:+998 5054014 1 </p>
+                               
+<a href="https://t.me/Abrorbek1401" target="_blank" rel="noopener noreferrer">
+    Telegram
+</a>
+
+
+                            </div>
+
+                            <div class="gallery-grid">
+
+                                <figure class="gallery-card">
+
+                                    <img
+                                        src="images/school3-1.jpg"
+                                        alt="Andijon tumani 3-maktabdagi birinchi xotira"
+                                        loading="lazy">
+
+                                    <figcaption>
+                                        3-maktab · 01
+                                    </figcaption>
+
+                                </figure>
+
+                                <figure class="gallery-card">
+
+                                    <img
+                                        src="images/school3-2.jpg"
+                                        alt="Andijon tumani 3-maktabdagi ikkinchi xotira"
+                                        loading="lazy">
+
+                                    <figcaption>
+                                        3-maktab · 02
+                                    </figcaption>
+
+                                </figure>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <span class="timeline-symbol">↗</span>
+
+                </article>
+
+
+                <!-- 2. ANDIJON SHAHRI 54-MAKTAB -->
+                <article class="timeline-item reveal">
+
+                    <div class="timeline-marker">
+                        <span>02</span>
+                    </div>
+
+                    <div class="timeline-date">
+                        2022 — 2023
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <p class="timeline-type">
+                            UMUMIY O'RTA TA'LIM · 1 YIL
+                        </p>
+
+                        <h3>
+                            Andijon shahri 54-umumiy o'rta
+                            ta'lim maktabi
+                        </h3>
+
+                        <p>
+                            2022-yilda ta'lim yo'limni Andijon
+                            shahridagi 54-umumiy o'rta ta'lim
+                            maktabida davom ettirdim. Yangi
+                            muhitga moslashish, boshqa o'quv
+                            muhiti bilan tanishish va oldingi
+                            bilimlarimni mustahkamlash bu
+                            bosqichning muhim qismi bo'ldi.
+                        </p>
+
+                        <p>
+                            Turli sharoitlarda o'qishni davom
+                            ettirish insonga moslashuvchan bo'lish,
+                            o'z oldiga maqsad qo'yish va yangi
+                            vaziyatlarga mas'uliyat bilan
+                            yondashish kerakligini anglatadi.
+                        </p>
+
+                        <p>
+                            Ushbu bir yillik bosqich keyingi
+                            ta'lim yo'lim — akademik litseyga
+                            o'tishdan oldingi muhim davr bo'ldi.
+                        </p>
+
+
+                        <!-- 54-MAKTAB RASMLARI -->
+                        <div class="portfolio-gallery">
+
+                            <div class="gallery-heading">
+                                <span>PHOTO ARCHIVE / 02</span>
+                                <span>Yangi bosqich</span>
+                            </div>
+
+                            <div class="gallery-grid">
+
+                                <figure class="gallery-card">
+
+                                    <img
+                                        src="images/school54-1.jpg"
+                                        alt="Andijon shahri 54-maktabdan birinchi rasm"
+                                        loading="lazy">
+
+                                    <figcaption>
+                                        54-maktab · 01
+                                    </figcaption>
+
+                                </figure>
+
+                                <figure class="gallery-card">
+
+                                    <img
+                                        src="images/school54-2.jpg"
+                                        alt="Andijon shahri 54-maktabdan ikkinchi rasm"
+                                        loading="lazy">
+
+                                    <figcaption>
+                                        54-maktab · 02
+                                    </figcaption>
+
+                                </figure>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <span class="timeline-symbol">⌁</span>
+
+                </article>
+
+
+                <!-- 3. AKADEMIK LITSEY -->
+                <article class="timeline-item reveal">
+
+                    <div class="timeline-marker">
+                        <span>03</span>
+                    </div>
+
+                    <div class="timeline-date">
+                        2023 — 2025
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <p class="timeline-type">
+                            AKADEMIK TA'LIM · 2 YIL
+                        </p>
+
+                        <h3>
+                            Andijon davlat universiteti
+                            akademik litseyi
+                        </h3>
+
+                        <p>
+                            2023-yilda Andijon davlat universiteti
+                            akademik litseyida o'qishni boshladim.
+                            Ikki yil davom etgan ushbu bosqich
+                            bilimlarimni yanada chuqurlashtirish,
+                            oliy ta'limga tayyorlanish va kelajak
+                            yo'nalishim haqida ko'proq izlanish
+                            imkonini berdi.
+                        </p>
+
+                        <p>
+                            Akademik litsey davri faqat yangi
+                            mavzularni o'zlashtirish emas, balki
+                            mustaqil fikrlash, ma'lumotlarni tahlil
+                            qilish, murakkab vazifalarga sabr bilan
+                            yondashish va vaqtni to'g'ri taqsimlash
+                            muhimligini anglash davri ham bo'ldi.
+                        </p>
+
+                        <p>
+                            Ushbu ta'lim bosqichida olgan bilimlarim
+                            oliy ta'limga kirish va kelajakda
+                            o'zim qiziqqan yo'nalishlarda
+                            rivojlanish uchun tayanch bo'ldi.
+                        </p>
+
+
+                        <!-- AKADEMIK LITSEY RASMLARI -->
+                        <div class="portfolio-gallery">
+
+                            <div class="gallery-heading">
+                                <span>PHOTO ARCHIVE / 03</span>
+                               
+<a href=" https://lyceumkspi.uz/" target="_blank" rel="noopener noreferrer">
+   Akademik litsey yillari
+</a>
+
+                            </div>
+
+                            <div class="gallery-grid">
+
+                                <figure class="gallery-card">
+
+                                    <img
+                                        src="images/lyceum-1.jpg"
+                                        alt="Andijon davlat universiteti akademik litseyidan birinchi rasm"
+                                        loading="lazy">
+
+                                    <figcaption>
+                                        Akademik litsey · 01
+                                    </figcaption>
+
+                                </figure>
+
+                                <figure class="gallery-card">
+
+                                    <img
+                                        src="images/lyceum-2.jpg"
+                                        alt="Andijon davlat universiteti akademik litseyidan ikkinchi rasm"
+                                        loading="lazy">
+
+                                    <figcaption>
+                                        Akademik litsey · 02
+                                    </figcaption>
+
+                                </figure>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <span class="timeline-symbol">⌘</span>
+
+                </article>
+
+
+                <!-- 4. FARG'ONA DAVLAT TEXNIKA UNIVERSITETI -->
+                <article class="timeline-item reveal">
+
+                    <div class="timeline-marker">
+                        <span>04</span>
+                    </div>
+
+                    <div class="timeline-date">
+                        2025 — HOZIR
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <p class="timeline-type">
+                            OLIY TA'LIM · KASBIY RIVOJLANISH
+                        </p>
+
+                        <h3>
+                            Farg'ona davlat texnika universiteti
+                        </h3>
+
+                        <p>
+                            Akademik litseyni tugatganimdan so'ng
+                            Farg'ona davlat texnika universitetiga
+                            o'qishga kirdim. Bu men uchun yangi
+                            muhit, yangi maqsadlar va kasbiy
+                            rivojlanish yo'lidagi muhim bosqichdir.
+                        </p>
+
+                        <p>
+                            Universitetdagi faoliyatim davomida
+                            nazariy bilimlarni o'rganish bilan
+                            birga, ularni amaliyotga tatbiq etishga
+                            ham intilaman. Texnologiyalar qanday
+                            ishlashi, raqamli mahsulotlar qanday
+                            yaratilishi va g'oyalarni amaliy
+                            yechimga aylantirish jarayoni meni
+                            qiziqtiradi.
+                        </p>
+
+                        <p>
+                            Men uchun universitet davri kelajak
+                            kasbimga tayyorlanish, o'z qobiliyatlarimni
+                            aniqlash, mustaqil izlanish va turli
+                            loyihalar orqali tajriba to'plash
+                            imkoniyatidir.
+                        </p>
+
+                        <p>
+                            Shuningdek, yangi bilimlarni muntazam
+                            o'rganish, texnik muammolarga yechim
+                            izlash va o'z loyihalarimni
+                            takomillashtirishga harakat qilaman.
+                        </p>
+
+
+                        <!-- UNIVERSITET RASMLARI -->
+                        <div class="portfolio-gallery">
+
+                            <div class="gallery-heading">
+                                <span>PHOTO ARCHIVE / 04</span>
+                                <span>Universitet hayoti</span>
+                            </div>
+
+                            <div class="gallery-grid">
+
+                                <figure class="gallery-card">
+
+                                    <img
+                                        src="images/university-1.jpg"
+                                        alt="Farg'ona davlat texnika universitetidagi birinchi xotira"
+                                        loading="lazy">
+
+                                    <figcaption>
+                                        Universitet · 01
+                                    </figcaption>
+
+                                </figure>
+
+                                <figure class="gallery-card">
+
+                                    <img
+                                        src="images/university-2.jpg"
+                                        alt="Farg'ona davlat texnika universitetidagi ikkinchi xotira"
+                                        loading="lazy">
+
+                                    <figcaption>
+                                        Universitet · 02
+                                    </figcaption>
+
+                                </figure>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="timeline-note">
+
+                            <span class="timeline-note-number">
+                                MY APPROACH
+                            </span>
+
+                            <p>
+                                O'rganish → Rejalash → Sinash →
+                                Xatolarni tuzatish → Yaxshilash
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <span class="timeline-symbol">✳</span>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             04. HAKATONLAR VA MUSOBAQALAR
+        ====================================== -->
+
+        <section
+            class="content-section section-shell"
+            id="hackathons">
+
+            <div class="section-index reveal">
+                <span>03 / ACTIVITIES</span>
+                <span class="index-rule"></span>
+                <span>HAKATON VA MUSOBAQALAR</span>
+            </div>
+
+
+            <div class="about-layout">
+
+                <div class="section-heading reveal">
+
+                    <p class="eyebrow">
+                        TAJRIBA VA IZLANISH
+                    </p>
+
+                    <h2>
+                        G'oyadan
+                        <br>
+                        <span class="accent-word">
+                            amaliy harakatga.
+                        </span>
+                    </h2>
+
+                </div>
+
+
+                <div class="about-copy reveal">
+
+                    <p class="large-copy">
+                        Universitet davrida hakatonlar va
+                        musobaqalarda qatnashish orqali o'z
+                        bilimlarimni sinab ko'rish va yangi
+                        tajribalar orttirishga intilaman.
+                    </p>
+
+                    <p>
+                        Hakatonlar qisqa vaqt ichida muammoni
+                        tushunish, yechim g'oyasini ishlab chiqish,
+                        vazifalarni rejalash va fikrni boshqalarga
+                        tushunarli tarzda yetkazishni talab qiladigan
+                        muhit hisoblanadi.
+                    </p>
+
+                    <p>
+                        Bunday tadbirlar menga innovatsion
+                        fikrlashning ahamiyatini anglash,
+                        turli yechimlarni taqqoslash va g'oyaning
+                        foydalanuvchi uchun qanday qiymat
+                        yaratishini o'ylab ko'rish uchun
+                        imkon beradi.
+                    </p>
+
+                    <p>
+                        Men uchun musobaqalarning qiymati
+                        faqat yakuniy natijada emas. Tayyorgarlik,
+                        izlanish, jamoa bilan fikr almashish,
+                        vaqtni boshqarish va o'z xatolarimdan
+                        xulosa chiqarish ham katta ahamiyatga ega.
+                    </p>
+
+                    <p>
+                        Kelgusida yanada murakkab loyihalar
+                        ustida ishlash, o'z g'oyalarimni
+                        rivojlantirish va amaliy natijalarga
+                        erishish uchun bu tajribalarni
+                        davom ettirishni maqsad qilganman.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- HAKATON VA MUSOBAQA RASMLARI -->
+            <div class="portfolio-gallery activity-gallery reveal">
+
+                <div class="gallery-heading">
+                    <span>PHOTO ARCHIVE / 05</span>
+                    <span>Hakatonlar va musobaqalar</span>
+                </div>
+
+                <div class="gallery-grid">
+
+                    <figure class="gallery-card">
+
+                        <img
+                            src="images/hackathon-1.jpg"
+                            alt="Universitet davridagi hakaton yoki musobaqadan birinchi rasm"
+                            loading="lazy">
+
+                        <figcaption>
+                            Tadbir va faoliyat · 01
+                        </figcaption>
+
+                    </figure>
+
+                    <figure class="gallery-card">
+
+                        <img
+                            src="images/hackathon-2.jpg"
+                            alt="Universitet davridagi hakaton yoki musobaqadan ikkinchi rasm"
+                            loading="lazy">
+
+                        <figcaption>
+                            Tadbir va faoliyat · 02
+                        </figcaption>
+
+                    </figure>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             05. KO'NIKMALAR VA QIZIQISHLAR
+        ====================================== -->
+
+        <section
+            class="skills-section"
+            id="skills">
+
+            <div class="section-shell content-section">
+
+                <div class="section-index reveal">
+                    <span>04 / TOOLKIT</span>
+                    <span class="index-rule"></span>
+                    <span>KO'NIKMALAR</span>
+                </div>
+
+
+                <div class="skills-layout">
+
+                    <div class="section-heading reveal">
+
+                        <p class="eyebrow">
+                            DOIMIY RIVOJLANISH
+                        </p>
+
+                        <h2>
+                            Bilimni
+                            <br>
+                            <span class="accent-word">
+                                amaliyotga.
+                            </span>
+                        </h2>
+
+                        <p class="skills-description">
+                            Men yangi bilimlarni o'rganish,
+                            kichik loyihalarda sinash va
+                            amaliy tajribamni muntazam
+                            oshirishga intilaman. Quyidagi
+                            yo'nalishlar mening qiziqishlarim
+                            va rivojlanish maqsadlarimni
+                            ifodalaydi.
+                        </p>
+
+                    </div>
+
+
+                    <div class="skill-list reveal">
+
+                        <!-- 1 -->
+                        <div class="skill-row">
+
+                            <span class="skill-number">01</span>
+
+                            <div>
+                                <h3>Veb dasturlash</h3>
+
+                                <p>
+                                    HTML · CSS · JavaScript ·
+                                    Veb-sahifa tuzilishi va interfeys
+                                </p>
+                            </div>
+
+                            <span class="skill-status">
+                                AMALIYOT
+                            </span>
+
+                        </div>
+
+
+                        <!-- 2 -->
+                        <div class="skill-row">
+
+                            <span class="skill-number">02</span>
+
+                            <div>
+                                <h3>Raqamli texnologiyalar</h3>
+
+                                <p>
+                                    Zamonaviy vositalar ·
+                                    Dasturiy mahsulotlar ·
+                                    Texnologik yechimlar
+                                </p>
+                            </div>
+
+                            <span class="skill-status">
+                                O'RGANILMOQDA
+                            </span>
+
+                        </div>
+
+
+                        <!-- 3 -->
+                        <div class="skill-row">
+
+                            <span class="skill-number">03</span>
+
+                            <div>
+                                <h3>Muammoni tahlil qilish</h3>
+
+                                <p>
+                                    Muammoni aniqlash ·
+                                    Sabablarni izlash ·
+                                    Yechim variantlarini solishtirish
+                                </p>
+                            </div>
+
+                            <span class="skill-status">
+                                RIVOJLANISH
+                            </span>
+
+                        </div>
+
+
+                        <!-- 4 -->
+                        <div class="skill-row">
+
+                            <span class="skill-number">04</span>
+
+                            <div>
+                                <h3>Startap va innovatsiya</h3>
+
+                                <p>
+                                    G'oya izlanishi ·
+                                    Foydalanuvchi muammosi ·
+                                    Mahsulotni rejalash
+                                </p>
+                            </div>
+
+                            <span class="skill-status">
+                                IZLANISH
+                            </span>
+
+                        </div>
+
+
+                        <!-- 5 -->
+                        <div class="skill-row">
+
+                            <span class="skill-number">05</span>
+
+                            <div>
+                                <h3>Mustaqil o'rganish</h3>
+
+                                <p>
+                                    Qo'llanmalar bilan ishlash ·
+                                    Tajribalar ·
+                                    Bilimlarni mustahkamlash
+                                </p>
+                            </div>
+
+                            <span class="skill-status">
+                                DAVOM ETMOQDA
+                            </span>
+
+                        </div>
+
+
+                        <!-- 6 -->
+                        <div class="skill-row">
+
+                            <span class="skill-number">06</span>
+
+                            <div>
+                                <h3>Jamoaviy fikrlash</h3>
+
+                                <p>
+                                    Fikr almashish ·
+                                    Vazifalarni rejalash ·
+                                    Umumiy yechim izlash
+                                </p>
+                            </div>
+
+                            <span class="skill-status">
+                                RIVOJLANISH
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="skill-orbit"
+                    aria-hidden="true">
+
+                    <span>LEARN</span>
+                    <i></i>
+                    <span>BUILD</span>
+                    <i></i>
+                    <span>IMPROVE</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             06. LOYIHALAR
+        ====================================== -->
+
+        <section
+            class="content-section section-shell projects-section"
+            id="projects">
+
+            <div class="section-index reveal">
+                <span>05 / SELECTED WORK</span>
+                <span class="index-rule"></span>
+                <span>LOYIHALAR VA G'OYALAR</span>
+            </div>
+
+
+            <div class="projects-heading">
+
+                <div class="section-heading reveal">
+
+                    <p class="eyebrow">
+                        REJALASHDAN AMALIYOTGACHA
+                    </p>
+
+                    <h2>
+                        O'ylayman.
+                        <br>
+                        <span class="accent-word">
+                            Sinayman.
+                        </span>
+                    </h2>
+
+                </div>
+
+                <p class="section-aside reveal">
+                    Har bir loyiha yangi bilimlarni sinash,
+                    amaliy tajriba orttirish va muammolarga
+                    yaxshiroq yechim izlash uchun imkoniyatdir.
+                    Bu yerda ishlarning holati aniq ko'rsatiladi.
+                </p>
+
+            </div>
+
+
+            <div class="project-grid">
+
+                <!-- LOYIHA 1: SHAXSIY PORTFOLIO -->
+                <article class="project-card project-featured reveal">
+
+                    <div class="project-art art-network">
+
+                        <div class="art-ring ring-a"></div>
+                        <div class="art-ring ring-b"></div>
+
+                        <div class="art-node node-a"></div>
+                        <div class="art-node node-b"></div>
+                        <div class="art-node node-c"></div>
+
+                        <div class="art-cross">✳</div>
+
+                        <span class="art-code">
+                            WEB_001 / PORTFOLIO
+                        </span>
+
+                    </div>
+
+
+                    <div class="project-info">
+
+                        <div class="project-meta">
+                            <span>01 / WEB DEVELOPMENT</span>
+
+                            <span class="project-state">
+                                ISHLAB CHIQISH
+                            </span>
+                        </div>
+
+                        <h3>
+                            Shaxsiy portfolio sayti
+                        </h3>
+
+                        <p>
+                            Shaxsiy ma'lumotlarim, ta'lim tarixim,
+                            qiziqishlarim va loyihalarimni yagona
+                            zamonaviy veb-sahifada jamlash uchun
+                            yaratilayotgan loyiha.
+                        </p>
+
+                        <p>
+                            Maqsad — ma'lumotlarni tartibli
+                            ko'rsatish, qulay navigatsiya yaratish
+                            va saytni turli ekran o'lchamlariga
+                            moslashtirish.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <a
+                            class="text-link project-link"
+                            href="#contact">
+                            Loyiha haqida bog'lanish
+                            <span>↗</span>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- LOYIHA 2: PROFITLEAK AI KONSEPSIYASI -->
+                <article class="project-card reveal">
+
+                    <div class="project-art art-cube">
+
+                        <div class="cube-scene">
+
+                            <div class="cube-face face-front"></div>
+                            <div class="cube-face face-back"></div>
+                            <div class="cube-face face-left"></div>
+                            <div class="cube-face face-right"></div>
+                            <div class="cube-face face-top"></div>
+                            <div class="cube-face face-bottom"></div>
+
+                        </div>
+
+                        <span class="art-code">
+                            IDEA_002 / BUSINESS AI
+                        </span>
+
+                    </div>
+
+
+                    <div class="project-info">
+
+                        <div class="project-meta">
+                            <span>02 / STARTUP CONCEPT</span>
+
+                            <span class="project-state">
+                                KONSEPSIYA
+                            </span>
+                        </div>
+
+                        <h3>
+                            ProfitLeak AI
+                        </h3>
+
+                        <p>
+                            Kichik biznesdagi savdo va moliyaviy
+                            jarayonlarni tahlil qilishga yordam
+                            berishi mumkin bo'lgan raqamli mahsulot
+                            g'oyasi.
+                        </p>
+
+                        <p>
+                            Konsepsiyaning asosiy yo'nalishi —
+                            foyda va xarajatlarni tushunish,
+                            muammoli jarayonlarni aniqlash hamda
+                            biznes egasiga ma'lumotlarga asoslangan
+                            qarorlar qabul qilishda ko'maklashish.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>AI g'oyasi</span>
+                            <span>Biznes tahlili</span>
+                            <span>Startup</span>
+                        </div>
+
+                        <a
+                            class="text-link project-link"
+                            href="#contact">
+                            Konsepsiya haqida
+                            <span>↗</span>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- LOYIHA 3: ANDROID TAJRIBASI -->
+                <article class="project-card reveal">
+
+                    <div class="project-art art-radar">
+
+                        <div class="radar-circle"></div>
+                        <div class="radar-sweep"></div>
+                        <div class="radar-dot"></div>
+
+                        <span class="art-code">
+                            APP_003 / ANDROID
+                        </span>
+
+                    </div>
+
+
+                    <div class="project-info">
+
+                        <div class="project-meta">
+                            <span>03 / ANDROID PRACTICE</span>
+
+                            <span class="project-state">
+                                O'RGANISH
+                            </span>
+                        </div>
+
+                        <h3>
+                            AutoTapCircle
+                        </h3>
+
+                        <p>
+                            Android ilovasi tuzilishi, ishlab
+                            chiqish muhiti va loyiha sozlamalarini
+                            tushunish uchun olib borilayotgan
+                            amaliy o'rganish yo'nalishi.
+                        </p>
+
+                        <p>
+                            Jarayonda loyiha tuzilishi, dasturiy
+                            bog'liqliklar, Android SDK va
+                            kompilyatsiya bilan bog'liq masalalarni
+                            o'rganish muhim o'rin tutadi.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Android Studio</span>
+                            <span>Kotlin</span>
+                            <span>O'rganish</span>
+                        </div>
+
+                        <a
+                            class="text-link project-link"
+                            href="#contact">
+                            Loyiha haqida
+                            <span>↗</span>
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <p class="projects-footnote">
+                Izoh: loyiha kartalarida ayrim ishlar g'oya yoki
+                o'rganish bosqichida ko'rsatilgan. Bu ularning
+                to'liq tayyor mahsulot ekanini anglatmaydi.
+            </p>
+
+        </section>
+
+
+        <!-- =====================================
+             07. MAQSADLAR VA QARASHLAR
+        ====================================== -->
+
+        <section
+            class="content-section section-shell"
+            id="goals">
+
+            <div class="section-index reveal">
+                <span>06 / MY VISION</span>
+                <span class="index-rule"></span>
+                <span>KELAJAKDAGI MAQSADLAR</span>
+            </div>
+
+
+            <div class="about-layout">
+
+                <div class="section-heading reveal">
+
+                    <p class="eyebrow">
+                        OLDINGA INTILISH
+                    </p>
+
+                    <h2>
+                        Bugungi bilim
+                        <br>
+                        <span class="accent-word">
+                            ertangi imkoniyat.
+                        </span>
+                    </h2>
+
+                </div>
+
+
+                <div class="about-copy reveal">
+
+                    <p class="large-copy">
+                        Maqsadim — faqat texnologiyalardan
+                        foydalanishni emas, balki ularning
+                        qanday ishlashini tushunish va ular
+                        yordamida foydali mahsulotlar
+                        yaratishni o'rganish.
+                    </p>
+
+                    <p>
+                        Kelgusida dasturlash bo'yicha bilimlarimni
+                        chuqurlashtirish, murakkabroq loyihalarni
+                        mustaqil ishlab chiqish va ularni
+                        foydalanuvchilar ehtiyojiga moslashtirish
+                        ustida ishlashni xohlayman.
+                    </p>
+
+                    <p>
+                        Yana bir muhim maqsadim — innovatsion
+                        g'oyalarni yuzaki baholamasdan, ularning
+                        haqiqiy muammoni hal qilishini,
+                        kimga kerakligini va qanday qiymat
+                        yaratishini sinchiklab o'rganish.
+                    </p>
+
+                    <p>
+                        Men biznes, texnologiya va ijodiy
+                        fikrlash birlashgan loyihalarga qiziqaman.
+                        Foydalanuvchilarning ehtiyojlarini
+                        tushunish, bozorni o'rganish va
+                        g'oyalarni amaliy tekshirish kelajak
+                        rivojlanishim uchun muhim yo'nalishlardir.
+                    </p>
+
+                    <p>
+                        Shuningdek, jamoada ishlash, o'z fikrimni
+                        aniq ifodalash, taqdimot tayyorlash va
+                        musobaqalarda o'z bilimimni sinash
+                        ko'nikmalarimni rivojlantirishni
+                        davom ettirmoqchiman.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             MANIFESTO — ASOSIY TAMOYIL
+        ====================================== -->
+
+        <section class="manifesto-section">
+
+            <div
+                class="manifesto-particles"
+                aria-hidden="true">
+
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+
+            <div class="section-shell manifesto-content reveal">
+
+                <p class="eyebrow">
+                    MENING TAMOYILIM / 001
+                </p>
+
+                <h2>
+                    Kelajakni kutmayman.
+                    <br>
+
+                    <span class="accent-word">
+                        Uni qurishni o'rganaman.
+                    </span>
+                </h2>
+
+                <p>
+                    Har bir katta natija kichik qadamdan boshlanadi.
+                    Men uchun rivojlanish — bugungi bilimni ertaga
+                    amaliyotda sinash, xatolardan xulosa chiqarish
+                    va har bir yangi tajribadan foydalanishdir.
+                </p>
+
+                <a
+                    class="button button-primary"
+                    href="#contact">
+                    Men bilan bog'laning
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             08. ALOQA
+        ====================================== -->
+
+        <section
+            class="content-section section-shell contact-section"
+            id="contact">
+
+            <div class="section-index reveal">
+                <span>07 / CONTACT</span>
+                <span class="index-rule"></span>
+                <span>ALOQA</span>
+            </div>
+
+
+            <div class="contact-layout">
+
+                <div class="section-heading reveal">
+
+                    <p class="eyebrow">
+                        YANGI IMKONIYATLARGA OCHIQMAN
+                    </p>
+
+                    <h2>
+                        Keling,
+                        <br>
+
+                        <span class="accent-word">
+                            bog'lanamiz.
+                        </span>
+                    </h2>
+
+                    <p class="contact-description">
+                        Texnologiyalar, dasturlash, innovatsion
+                        g'oyalar yoki hamkorlik haqida suhbatlashish
+                        uchun quyidagi aloqa ma'lumotlaridan
+                        foydalanishingiz mumkin.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-details reveal">
+
+                    <span class="meta-label">
+                        ELEKTRON POCHTA
+                    </span>
+
+                    <!-- Bu yerga o'z emailingizni yozing -->
+                    <a
+                        class="contact-email"
+                        href="mailto:EMAILINGIZNI_KIRITING">
+
+                        EMAILINGIZNI_KIRITING
+                        <span>↗</span>
+
+                    </a>
+
+
+                    <div class="contact-rule"></div>
+
+
+                    <span class="meta-label">
+                        IJTIMOIY TARMOQLAR
+                    </span>
+
+
+                    <div class="social-links">
+
+                        <!-- GitHub profilingiz havolasini qo'ying -->
+                        <a
+                            href="https://github.com/"
+                            target="_blank"
+                            rel="noopener noreferrer">
+
+                            GitHub
+                            <span>↗</span>
+
+                        </a>
+
+
+                        <!-- Telegram profilingiz havolasini qo'ying -->
+                        <a
+                            href="https://t.me/"
+                            target="_blank"
+                            rel="noopener noreferrer">
+
+                            Telegram
+                            <span>↗</span>
+
+                        </a>
+
+
+                        <!-- LinkedIn profilingiz bo'lsa, havolani almashtiring -->
+                        <a
+                            href="https://www.linkedin.com/"
+                            target="_blank"
+                            rel="noopener noreferrer">
+
+                            LinkedIn
+                            <span>↗</span>
+
+                        </a>
+
+                    </div>
+
+
+                    <p class="contact-note">
+                        Eslatma: yuqoridagi elektron pochta va
+                        ijtimoiy tarmoq havolalarini shaxsiy
+                        profilingiz bilan almashtiring.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         FOOTER — SAHIFA YAKUNI
+    ========================================== -->
+
+    <footer class="site-footer section-shell">
+
+        <a
+            class="brand"
+            href="#home"
+            aria-label="Sahifa boshiga qaytish">
+
+            <span class="brand-mark" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+
+            <span>
+                ABRORBEK<span class="brand-muted">.DEV</span>
+            </span>
+
+        </a>
+
+
+        <p>
+            O'RGANISHDA DAVOM ETAMAN
+            <span class="accent-word">✳</span>
+        </p>
+
+
+        <a
+            href="#top"
+            class="back-top">
+
+            YUQORIGA QAYTISH ↑
+
+        </a>
+
+
+        <span class="footer-year">
+            © <span id="currentYear">2026</span>
+            Abrorbek Anvarjonov
+        </span>
+
+    </footer>
+
+
+    <!-- =========================================
+         FON MUSIQASI
+    ========================================== -->
+
+    <audio
+        id="ambientAudio"
+        loop
+        preload="none">
+
+        <source
+            src="music/ambient.mp3"
+            type="audio/mpeg">
+
+        Brauzeringiz audio elementini qo'llab-quvvatlamaydi.
+
+    </audio>
+
+
+    <!-- JavaScript o'chirilgan holat uchun xabar -->
+    <noscript>
+        <div class="noscript-note">
+            Saytdagi ayrim animatsiyalar, menyu va
+            interaktiv funksiyalar ishlashi uchun
+            brauzeringizda JavaScript yoqilgan bo'lishi kerak.
+        </div>
+    </noscript>
+
+</body>
+</html>
